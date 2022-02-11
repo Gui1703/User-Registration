@@ -80,7 +80,7 @@ $ yarn start
 ```
 ```bash
 # Start API
-$ split the terminal
+# split the terminal
 
 # Access
 $ cd api
