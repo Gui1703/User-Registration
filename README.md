@@ -1,11 +1,3 @@
-<div align="center" id="top"> 
-  <img src="./.github/app.gif" alt="Projeto Em React" />
-
-  &#xa0;
-
-  <!-- <a href="https://projetoemreact.netlify.app">Demo</a> -->
-</div>
-
 <h1 align="center">Users Registration</h1>
 
 <p align="center">
