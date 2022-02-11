@@ -17,7 +17,9 @@ const Users = () => {
 
   useEffect(() => {
     async function fetchUsers() {
-      const { data: newUsers } = await axios.get("http://registrationusers.netlify.app/api/users/");
+      const { data: newUsers } = await axios.get(
+        "http://localhost:8000/users/"
+      );
 
       setUsers(newUsers);
     }
@@ -25,7 +27,7 @@ const Users = () => {
   }, []);
 
   async function deleteUser(userId) {
-    await axios.delete(`http://registrationusers.netlify.app/api/users/${userId}`);
+    await axios.delete(`http://localhost:8000/users/${userId}`);
     const newUsers = users.filter((user) => user.id !== userId);
 
     setUsers(newUsers);

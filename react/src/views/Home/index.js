@@ -17,7 +17,7 @@ const Home = () => {
   const inputAge = useRef();
 
   async function addNewuser() {
-    const { data: newUser } = await axios.post("http://registrationusers.netlify.app/api/users/", {
+    const { data: newUser } = await axios.post("http://localhost:8000/users", {
       name: inputName.current.value,
       age: inputAge.current.value,
     });
